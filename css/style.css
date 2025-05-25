@@ -7,8 +7,7 @@
   text-decoration: none;
 }
 
-/*HEADER Y MENU DE NAVEGACION*/
-
+/*HEADER*/
 header {
   position: fixed;
   right: 0;
@@ -21,17 +20,14 @@ header {
   padding: 33px 9%;
   background: transparent;
 }
-
-.logo {
+header .logo {
   width: 70px;
   height: auto;
 }
-
-.navlist {
+header .navlist {
   display: flex;
 }
-
-.navlist a {
+header .navlist a {
   color: black;
   margin-left: 60px;
   font-size: 15px;
@@ -39,17 +35,15 @@ header {
   border-bottom: 2px solid transparent;
   transition: all 0.55s ease;
 }
-
-.navlist a:hover {
+header .navlist a:hover {
   border-bottom: 2px solid white;
 }
-.navlist a.active {
+header .navlist a.active {
   background: #43a1d5;
   border-radius: 25px;
   padding: 10px;
 }
-
-#menu-icon {
+header #menu-icon {
   color: black;
   font-size: 55px;
   z-index: 10001;
@@ -58,8 +52,8 @@ header {
 }
 
 /*SECTION MESSI*/
-
-.messi {
+section {
+  padding: 0 19%;
   height: 100%;
   width: 100%;
   min-width: 100vh;
@@ -70,16 +64,10 @@ header {
   align-items: center;
   gap: 2rem;
 }
-
-section {
-  padding: 0 19%;
-}
-
-.messi-text {
+section .messi-text {
   padding: 150px 0 75px;
 }
-
-.messi-text h1 {
+section .messi-text h1 {
   font-family: "Gravitas One", serif;
   font-size: 90px;
   line-height: 1;
@@ -88,27 +76,23 @@ section {
   color: black;
   margin: 0 0 45px;
 }
-
-.messi-text h4 {
+section .messi-text h4 {
   font-size: 18px;
   font-weight: 600;
   color: #43a1d5;
   margin-bottom: 10px;
 }
-
-.messi-text p {
+section .messi-text p {
   color: black;
   font-size: 15px;
   line-height: 1.9;
   margin-bottom: 40px;
 }
-
-.messi-img img {
+section .messi-img img {
   width: 700px;
   height: auto;
 }
-
-.messi-text a {
+section .messi-text a {
   display: inline-block;
   color: black;
   background: #43a1d5;
@@ -120,25 +104,21 @@ section {
   text-transform: uppercase;
   transition: all 0.55s ease;
 }
-
-.messi-text a:hover {
+section .messi-text a:hover {
   background: transparent;
   border: 2px solid #2984b7;
   transform: translateX(8px);
 }
 
 /*PALMARES*/
-
 .palmares {
   padding: 0% 19%;
   background: linear-gradient(245.59deg, #111 0%, #aaa 28.53%, #fff 72.52%);
 }
-
-.palmares-text {
+.palmares .palmares-text {
   padding: 150px 0 75px;
 }
-
-.palmares-text h2 {
+.palmares .palmares-text h2 {
   font-family: "Gravitas One", serif;
   font-size: 25px;
   line-height: 1;
@@ -147,8 +127,7 @@ section {
   color: black;
   margin: 0 0 45px;
 }
-
-.palmares-text p {
+.palmares .palmares-text p {
   color: black;
   font-size: 20px;
   line-height: 1.9;
@@ -163,36 +142,31 @@ section {
   text-align: center;
   background: linear-gradient(245.59deg, #fff 28.53%, #aaa 72.52%);
 }
-
-.teams h3 {
+.teams .teams h3 {
   font-size: 25px;
   padding: 5% 0;
   margin-bottom: 8px;
 }
-
-.teams ul li {
+.teams .teams ul li {
   color: #333;
   font-size: 18px;
   padding-bottom: 10px;
 }
-
-.card {
+.teams .card {
   width: 325px;
   background-color: #f0f0f0;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 2);
+  box-shadow: 0px 2px 4px rgb(0, 0, 0);
   margin: 20px;
 }
-
-.card img {
+.teams .card img {
   width: 100%;
   height: auto;
   /* border-radius: 5%; */
 }
 
 /*FOOTER*/
-
 footer {
   align-items: center;
   background-color: #212121;
@@ -202,37 +176,31 @@ footer {
   margin-top: auto;
   width: 100%;
 }
-
 footer div a {
   color: #f0f0f0;
   border-left: solid white 1px;
   padding: 0 1rem;
 }
-
-.icons {
+footer .icons {
   display: flex;
   justify-content: center;
 }
-
-.icons a {
+footer .icons a {
   border-left: none;
 }
-
-.icons i {
+footer .icons i {
   display: block;
   margin: 26px 0;
   font-size: 24px;
   color: white;
   transition: all 0.5s ease;
 }
-
-.icons i:hover {
+footer .icons i:hover {
   color: #71b8df;
   transform: translateY(-5px);
 }
 
 /*MEDIA QUERY RESPONSIVE */
-
 @media (max-width: 1535px) {
   header {
     padding: 15px 3%;
@@ -246,7 +214,6 @@ footer div a {
     transition: 0.2s;
   }
 }
-
 @media (max-width: 1460px) {
   section {
     padding: 0 12%;
@@ -256,7 +223,6 @@ footer div a {
     padding: 150px 0 75px;
   }
 }
-
 @media (max-width: 1340px) {
   .messi-text {
     padding: 150px 0 75px;
@@ -273,7 +239,6 @@ footer div a {
     margin-bottom: 25px;
   }
 }
-
 @media (max-width: 1195px) {
   section {
     padding: 0 3%;
@@ -298,7 +263,6 @@ footer div a {
     display: none;
   }
 }
-
 @media (max-width: 990px) {
   #menu-icon {
     display: block;
@@ -332,7 +296,6 @@ footer div a {
     width: 100vh;
   }
 }
-
 @media (max-width: 680px) {
   .messi-img img {
     width: 100%;
@@ -344,8 +307,9 @@ footer div a {
   .teams {
     width: 100%;
   }
-
   footer {
     width: 100vh;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

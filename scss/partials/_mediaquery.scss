@@ -1,0 +1,118 @@
+/*MEDIA QUERY RESPONSIVE */
+
+@media (max-width: 1535px) {
+  header {
+    padding: 15px 3%;
+    transition: 0.2s;
+  }
+  .messi-text {
+    padding: 150px 0 75px;
+  }
+  .icons {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1460px) {
+  section {
+    padding: 0 12%;
+    transition: 0.2s;
+  }
+  .messi-text {
+    padding: 150px 0 75px;
+  }
+}
+
+@media (max-width: 1340px) {
+  .messi-text {
+    padding: 150px 0 75px;
+  }
+  .messi-img img {
+    width: 100%;
+    height: auto;
+  }
+  .messi-text h1 {
+    font-size: 75px;
+    margin: 0 0 30px;
+  }
+  .messi-text h5 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1195px) {
+  section {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+  .messi-text {
+    padding-top: 115px;
+  }
+  .messi-img {
+    text-align: center;
+  }
+  .messi-img img {
+    width: 560px;
+    height: auto;
+  }
+  .messi {
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .footer-links {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  #menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background: #71b8df;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+    border: 4px solid #111;
+  }
+  .navlist a {
+    color: #111;
+    margin-left: 0;
+    display: block;
+    margin: 7px 0;
+    margin-top: 1.5rem;
+    font-size: 20px;
+  }
+  .navlist.open {
+    right: 0;
+  }
+  footer {
+    width: 100vh;
+  }
+}
+
+@media (max-width: 680px) {
+  .messi-img img {
+    width: 100%;
+    height: auto;
+  }
+  .palmares {
+    width: 100%;
+  }
+  .teams {
+    width: 100%;
+  }
+
+  footer {
+    width: 100vh;
+  }
+}
