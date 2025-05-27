@@ -95,6 +95,16 @@
   .navlist.open {
     right: 0;
   }
+  .galley {
+    padding: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section :nth-child(1) {
+    grid-column-start: span 1;
+  }
+  section :nth-child(4) {
+    grid-column-start: span 1;
+  }
   footer {
     width: 100vh;
   }

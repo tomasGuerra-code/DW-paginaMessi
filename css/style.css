@@ -52,7 +52,7 @@ header #menu-icon {
 }
 
 /*SECTION MESSI*/
-section {
+.messi {
   padding: 0 19%;
   height: 100%;
   width: 100%;
@@ -64,10 +64,10 @@ section {
   align-items: center;
   gap: 2rem;
 }
-section .messi-text {
+.messi .messi-text {
   padding: 150px 0 75px;
 }
-section .messi-text h1 {
+.messi .messi-text h1 {
   font-family: "Gravitas One", serif;
   font-size: 90px;
   line-height: 1;
@@ -76,23 +76,23 @@ section .messi-text h1 {
   color: black;
   margin: 0 0 45px;
 }
-section .messi-text h4 {
+.messi .messi-text h4 {
   font-size: 18px;
   font-weight: 600;
   color: #43a1d5;
   margin-bottom: 10px;
 }
-section .messi-text p {
+.messi .messi-text p {
   color: black;
   font-size: 15px;
   line-height: 1.9;
   margin-bottom: 40px;
 }
-section .messi-img img {
+.messi .messi-img img {
   width: 700px;
   height: auto;
 }
-section .messi-text a {
+.messi .messi-text a {
   display: inline-block;
   color: black;
   background: #43a1d5;
@@ -104,7 +104,7 @@ section .messi-text a {
   text-transform: uppercase;
   transition: all 0.55s ease;
 }
-section .messi-text a:hover {
+.messi .messi-text a:hover {
   background: transparent;
   border: 2px solid #2984b7;
   transform: translateX(8px);
@@ -164,6 +164,28 @@ section .messi-text a:hover {
   width: 100%;
   height: auto;
   /* border-radius: 5%; */
+}
+
+/*GALERIA DE IMAGENES*/
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+  padding: 100px 0;
+}
+.gallery .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery :nth-child(1) {
+  grid-column-start: span 2;
+}
+.gallery :nth-child(4) {
+  grid-column-start: span 2;
 }
 
 /*FOOTER*/
@@ -292,6 +314,16 @@ footer .icons i:hover {
   .navlist.open {
     right: 0;
   }
+  .galley {
+    padding: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery :nth-child(1) {
+    grid-column-start: span 1;
+  }
+  .gallery :nth-child(4) {
+    grid-column-start: span 1;
+  }
   footer {
     width: 100vh;
   }
@@ -312,4 +344,4 @@ footer .icons i:hover {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
