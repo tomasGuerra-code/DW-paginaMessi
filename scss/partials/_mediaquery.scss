@@ -1,5 +1,10 @@
 /*MEDIA QUERY RESPONSIVE */
 
+@media (min-width: 1535px) {
+  .gallery-conteiner {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 @media (max-width: 1535px) {
   header {
     padding: 15px 3%;
@@ -11,6 +16,9 @@
   .icons {
     padding: 0 3%;
     transition: 0.2s;
+  }
+  .gallery-conteiner {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -61,6 +69,9 @@
     gap: 1rem;
     grid-template-columns: 1fr;
   }
+  .gallery-conteiner {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .footer-links {
     display: none;
   }
@@ -95,15 +106,8 @@
   .navlist.open {
     right: 0;
   }
-  .galley {
-    padding: 30px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  section :nth-child(1) {
-    grid-column-start: span 1;
-  }
-  section :nth-child(4) {
-    grid-column-start: span 1;
+  .gallery-conteiner {
+    grid-template-columns: repeat(3, 1fr);
   }
   footer {
     width: 100vh;
@@ -121,7 +125,9 @@
   .teams {
     width: 100%;
   }
-
+  .gallery-conteiner {
+    grid-template-columns: repeat(1, 1fr);
+  }
   footer {
     width: 100vh;
   }

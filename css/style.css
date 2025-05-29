@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   font-family: serif;
   list-style: none;
   text-decoration: none;
@@ -167,25 +167,20 @@ header #menu-icon {
 }
 
 /*GALERIA DE IMAGENES*/
-.gallery {
-  max-width: 1200px;
-  margin: 0 auto;
+.gallery-conteiner {
   display: grid;
-  grid-template-columns: repeat(3 1fr);
-  grid-template-rows: 250px;
-  grid-gap: 20px;
-  padding: 100px 0;
+  grid-template-columns: repeat(5 1fr);
+  grid-template-rows: 150px;
+  grid-gap: 10px;
+  padding: 20px;
 }
-.gallery .images img {
+.gallery-conteiner .gallery-item {
+  position: relative;
+}
+.gallery-conteiner .gallery-item .gallery-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.gallery :nth-child(1) {
-  grid-column-start: span 2;
-}
-.gallery :nth-child(4) {
-  grid-column-start: span 2;
 }
 
 /*FOOTER*/
@@ -223,6 +218,11 @@ footer .icons i:hover {
 }
 
 /*MEDIA QUERY RESPONSIVE */
+@media (min-width: 1535px) {
+  .gallery-conteiner {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 @media (max-width: 1535px) {
   header {
     padding: 15px 3%;
@@ -234,6 +234,9 @@ footer .icons i:hover {
   .icons {
     padding: 0 3%;
     transition: 0.2s;
+  }
+  .gallery-conteiner {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media (max-width: 1460px) {
@@ -281,6 +284,9 @@ footer .icons i:hover {
     gap: 1rem;
     grid-template-columns: 1fr;
   }
+  .gallery-conteiner {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .footer-links {
     display: none;
   }
@@ -314,15 +320,8 @@ footer .icons i:hover {
   .navlist.open {
     right: 0;
   }
-  .galley {
-    padding: 30px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .gallery :nth-child(1) {
-    grid-column-start: span 1;
-  }
-  .gallery :nth-child(4) {
-    grid-column-start: span 1;
+  .gallery-conteiner {
+    grid-template-columns: repeat(3, 1fr);
   }
   footer {
     width: 100vh;
@@ -338,6 +337,9 @@ footer .icons i:hover {
   }
   .teams {
     width: 100%;
+  }
+  .gallery-conteiner {
+    grid-template-columns: repeat(1, 1fr);
   }
   footer {
     width: 100vh;
